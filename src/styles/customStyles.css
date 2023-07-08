@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider-button-style {
+  @apply absolute flex items-center justify-center w-8 h-8 -translate-y-1/2 border-2 rounded-full bg-Red top-1/2 z-[99];
+}
+
+.active {
+  @apply bg-Red px-3 py-1.5 rounded-full;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold leading-none font-Calvier;
+}
+
+.h2-style {
+  @apply leading-none text-[50px] lg:text-8xl;
+}
+
+.h3-style {
+  @apply text-[50px] lg:text-[80px];
+}
+
+.h4-style {
+  @apply text-4xl lg:text-6xl;
+}
+
+.home-p-style {
+  @apply text-sm font-light tracking-wider font-Inter xl:text-base;
+}
+
+.workshop-p-style {
+  @apply text-xs lg:text-sm font-RobotoMono;
+}

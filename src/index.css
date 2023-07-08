@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Roboto+Mono:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Calvier";
+  src: url("../public/Calvier.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 2px solid green; */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.word-space {
+  word-spacing: -12px;
+}
+
+.link-hover:not(.active):hover {
+  color: red;
+}
+
+.animation {
+  animation: moveLeft 15s linear infinite;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#menu-icon.active_menu span:first-child {
+  transform: rotate(45deg) translate(2.5px, 3px);
+}
+
+#menu-icon.active_menu span:nth-child(2) {
+  display: none;
+}
+
+#menu-icon.active_menu span:last-child {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+
+.swiper-wrapper {
+  width: 0px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+/* .zz {
+  z-index: -1;
+} */
+/* .scrollbar-container {
+  overflow-y: auto;
+  max-height: 200px;
+}
+ */
