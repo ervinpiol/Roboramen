@@ -17,10 +17,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* outline: 2px solid green; */
-}
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -68,12 +64,3 @@ body {
 .swiper-button-next::after {
   display: none;
 }
-
-/* .zz {
-  z-index: -1;
-} */
-/* .scrollbar-container {
-  overflow-y: auto;
-  max-height: 200px;
-}
- */
